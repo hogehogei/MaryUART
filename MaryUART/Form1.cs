@@ -47,7 +47,6 @@ namespace MaryUART
         {
             if (mSerialPort != null && mSerialPort.IsOpen)
             {
-                string text = SendTextBox.Text;
                 mSerialPort.WriteLine(SendTextBox.Text);
             }
         }
